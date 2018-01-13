@@ -8,7 +8,7 @@ import {
   } from '@angular/material';
 import {MatInputModule} from '@angular/material/input';
 import {MatTabsModule} from '@angular/material/tabs';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   imports: [
@@ -18,6 +18,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatButtonModule,
     MatInputModule,
     MatTabsModule,
+    BrowserAnimationsModule,
   ],
   exports: [
     CommonModule,
@@ -26,6 +27,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatButtonModule,
     MatInputModule,
     MatTabsModule,
+    BrowserAnimationsModule
   ],
   declarations: []
 })
