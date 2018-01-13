@@ -26,7 +26,8 @@ const ROUTES: Routes = [
   {path: 'reports', component: ReportsComponent},
   {path: 'dictionaries', component: DictionariesComponent},
   {path: 'admin', component: AdminComponent},
-  {path: '**', redirectTo: '/search'}
+  {path: 'add-storage', component: AddStorageComponent},
+  {path: '**', redirectTo: '/search'},
 ];
 
 @NgModule({

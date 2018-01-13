@@ -1,4 +1,79 @@
-<p>
-  add-storage works!
-</p>
+<div class="container">
+  <div class="col-md-6 col-md-offset-3" style="padding: 60px 0;margin: 0 auto;">
+    <mat-card>
+      <mat-card-title>Adaugare bun</mat-card-title>
+      <form>
+        <mat-form-field class="full-width">
+          <input matInput placeholder="ID" value="ANABI00005" disabled>
+        </mat-form-field>
 
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Nume" required>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Descriere">
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Identificator">
+        </mat-form-field>
+
+        <mat-form-field class="half-width">
+          <mat-select placeholder="Categorie" required>
+            <mat-option value="1">Mobil</mat-option>
+            <mat-option value="2">Imobil</mat-option>
+            <mat-option value="3">Bani</mat-option>
+          </mat-select>
+        </mat-form-field><mat-form-field class="half-width">
+            <mat-select placeholder="Subcategorie">
+              <mat-option value="1">Autovehicule</mat-option>
+              <mat-option value="2">Autoutilitare</mat-option>
+              <mat-option value="3">Aparate de zbor</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-select placeholder="Stare actuala" required>
+              <mat-option value="1">Sechestru</mat-option>
+              <mat-option value="2">Confiscare</mat-option>
+              <mat-option value="3">Ridicare sechestru</mat-option>
+              <mat-option value="4">Valorificare Anticipata</mat-option>
+              <mat-option value="5">Valorificare Standard</mat-option>
+              <mat-option value="6">Administrare simpla</mat-option>
+              <mat-option value="7">Reutilizare sociala</mat-option>
+            </mat-select>
+        </mat-form-field>
+        
+        <mat-form-field class="half-width">
+          <input matInput placeholder="Cantitate">
+        </mat-form-field><mat-form-field class="half-width">
+            <mat-select placeholder="Unitate de masura">
+              <mat-option value="1">kg</mat-option>
+              <mat-option value="2">buc</mat-option>
+              <mat-option value="3">mp</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="half-width">
+            <input matInput placeholder="Valoare estimata">
+          </mat-form-field><mat-form-field class="half-width">
+              <mat-select placeholder="Moneda">
+                <mat-option value="1">EUR</mat-option>
+                <mat-option value="2">GBP</mat-option>
+                <mat-option value="3">RON</mat-option>
+              </mat-select>
+          </mat-form-field>
+
+          <mat-form-field class="full-width">
+              <textarea matInput placeholder="Observatii"></textarea>
+          </mat-form-field>
+
+      </form>
+      <mat-card-actions>
+          <button mat-raised-button>Anuleaza</button>
+          <button mat-raised-button color="primary">Salveaza bunul</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
